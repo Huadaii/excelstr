@@ -1,4 +1,4 @@
-module excel
+module github.com/Huadaii/excelstr
 
 go 1.17
 

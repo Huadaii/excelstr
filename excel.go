@@ -1,4 +1,4 @@
-package excel
+package excelstr
 
 import (
 	"fmt"
