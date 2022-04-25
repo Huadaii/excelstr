@@ -18,8 +18,7 @@ func Excel(str interface{}, sheetName string) *excelize.File {
 }
 
 //Excel 多层结构体
-func ExcelStruct(str interface{}) *excelize.File {
-	var exce = excelize.NewFile()
+func ExcelStruct(exce *excelize.File,str interface{}) *excelize.File {
 	elemType := reflect.TypeOf(str)
 	elemValue := reflect.ValueOf(str)
 	for j := 0; j < elemType.NumField(); j++ {
